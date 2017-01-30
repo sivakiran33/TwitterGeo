@@ -1,0 +1,25 @@
+//This is to import the source 
+import scala.io.Source
+
+//The source file is given as the input to the source src
+val src = Source.fromFile("/state/partition1/Sample_DataSets/Programming_Project_Dataset.txt")
+
+//Initialize the count to 0 to obtain count of given input string
+var count=0
+
+//This is to give the input string
+val inpstring="school"
+
+//Funtion to search for inpstring from each line of the source
+  for {
+    (line, idx) <- src.getLines.zipWithIndex
+     
+    if line.contains(inpstring)
+  }
+ 
+  {
+     count=count+1
+      }
+
+//Print the count of variables for given string
+println("string count is "  +  count)

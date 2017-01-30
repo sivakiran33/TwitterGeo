@@ -1,0 +1,10 @@
+The output for different input strings, as obtained are as follows:
+
+inpstring="texas"
+string count is 30
+
+inpstring="siva"
+string count is 5
+
+inpstring="school"
+string count is 417
